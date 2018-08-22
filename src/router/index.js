@@ -1,8 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from 'views/Home';
-import Desktop from 'views/Desktop';
-import Websocket from 'views/Websocket';
+
+const Home = () => import(/* webpackChunkName: "home" */ 'views/Home');
+const Desktop = () => import(/* webpackChunkName: "desktop" */ 'views/Desktop');
+const Websocket = () => import(/* webpackChunkName: "websocket" */ 'views/Websocket');
 
 Vue.use(Router);
 
