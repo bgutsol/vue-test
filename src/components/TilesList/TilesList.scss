@@ -1,0 +1,22 @@
+.tiles-list {
+  max-width: 100%;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+
+    &--ghost{
+      opacity: 0.5;
+      background: #c8ebfb;
+      border: 1px dashed #24242b;
+
+      & > * {
+        opacity: 0;
+      }
+    }
+  }
+}

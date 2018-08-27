@@ -38,6 +38,7 @@ module.exports = {
       '@': resolve('src'),
       'components': '@/components',
       'views': '@/views',
+      'vendors': '@/vendors',
     }
   },
   module: {

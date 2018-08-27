@@ -1,0 +1,35 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid grey;
+  padding-bottom: 2px;
+  overflow: auto;
+  min-height: 50px;
+  resize: vertical;
+
+  &__header {
+    position: relative;
+    padding: 5px 15px;
+    border-bottom: 1px solid grey;
+    cursor: move;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    min-height: 50px;
+    padding: 10px 15px;
+    flex-grow: 1;
+  }
+}

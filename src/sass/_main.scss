@@ -1,0 +1,46 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font: {
+    size: 16px;
+    family: $primary-font;
+  }
+  color: $text-color;
+  @include font-smoothing;
+  position: relative;
+}
+
+html.noscroll,
+html.noscroll body{
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+p,h1,h2,h3,h4,ul{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------
+
+Main content
+
+-------------------------------- */
