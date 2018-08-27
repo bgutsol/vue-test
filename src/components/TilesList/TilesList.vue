@@ -1,9 +1,9 @@
 <template lang="pug">
   .tiles-list
-    Draggable.tiles-list(element="ul" v-model="list" :options="listOptions")
+    Draggable.tiles-list__list(element="ul" v-model="list" :options="listOptions")
       li.tiles-list__item(v-for="item in list" :key="item.id")
         Tile(:item="item")
-    button.tiles-list__btn-add(@click="addTile") Add new
+    button.tiles-list__btn-add(@click="addTile") + Add tile to trading desk
 </template>
 
 <script>

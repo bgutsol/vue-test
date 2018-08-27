@@ -1,7 +1,7 @@
 <template lang="pug">
   article.tile(:style="{height: item.height + 'px'}")
     .tile__header
-      button.tile__btn-close(@click="deleteTileAction") x
+      button.tile__btn-close(@click="deleteTileAction") X
       h2.tile__title {{ `Tile ${item.id}` }}
     .tile__content
 </template>

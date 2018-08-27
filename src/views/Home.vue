@@ -1,14 +1,14 @@
 <template lang="pug">
-  HelloWorld
+  Intro
 </template>
 
 <script>
-import HelloWorld from 'components/HelloWorld/HelloWorld';
+import Intro from 'components/Intro/Intro';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    Intro,
   },
 };
 </script>

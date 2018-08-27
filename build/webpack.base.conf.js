@@ -39,6 +39,7 @@ module.exports = {
       'components': '@/components',
       'views': '@/views',
       'vendors': '@/vendors',
+      'sass': '@/sass',
     }
   },
   module: {

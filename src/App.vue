@@ -1,7 +1,8 @@
 <template lang='pug'>
   div#app
     Header
-    router-view
+    .row
+      router-view
 </template>
 
 <script>

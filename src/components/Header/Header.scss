@@ -1,0 +1,25 @@
+@import 'sass/_configs.scss';
+
+.nav{
+  display: flex;
+  padding: 20px 0;
+  margin: 0 -15px;
+
+  &__link{
+    margin: 0 15px;
+    display: inline-block;
+    background-color: rgba($black-light, .05);
+    padding: 5px 20px;
+    opacity: .7;
+    text-decoration: none;
+    color: $black-light;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover,
+    &.router-link-active{
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+}
