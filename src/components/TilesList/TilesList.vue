@@ -22,7 +22,7 @@ export default {
     },
     listOptions() {
       return {
-        animation: 300,
+        animation: 230,
         handle: '.tile__header',
         ghostClass: 'tiles-list__item--ghost',
       };
@@ -32,11 +32,6 @@ export default {
     addTile() {
       this.$store.commit('desktop/addListItem');
     },
-    onMove({ item }) {
-      const el = item.querySelector('.erd_scroll_detection_container');
-      console.log(el);
-      el.style.display = 'none';
-    }
   },
   components: {
     Draggable,
