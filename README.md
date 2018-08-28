@@ -1,7 +1,5 @@
 # vue-test
 
-> A Vue.js project
-
 ## Build Setup
 
 ``` bash
@@ -18,4 +16,19 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Used libs/resources
+
+* [Webpack Template for Vuejs](https://github.com/vuejs-templates/webpack)
+* [Sass](https://sass-lang.com/)
+* [Pug](https://pugjs.org/api/getting-started.html)
+
+### Only for interactive desktop section:
+
+* [Vuex-persistedstate](https://github.com/robinvdvleuten/vuex-persistedstate)
+* [Vue.Draggable](https://github.com/SortableJS/Vue.Draggable)
+* [Element-resize-detector](https://github.com/wnr/element-resize-detector)
+* [Lodash](https://lodash.com/)
+
+### Only for websocket section:
+
+* [Vue-native-websocket](https://github.com/nathantsoi/vue-native-websocket)
