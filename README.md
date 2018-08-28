@@ -1,5 +1,3 @@
-# vue-test
-
 ## Build Setup
 
 ``` bash
