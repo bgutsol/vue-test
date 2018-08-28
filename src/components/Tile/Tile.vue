@@ -1,31 +1,17 @@
 <template lang="pug">
   article.tile(:style="{height: item.height + 'px'}")
     .tile__header
-      button.tile__btn-close(@click="deleteTileAction") X
+      button.tile__btn-close(@click="deleteTile") X
       h2.tile__title {{ `Tile ${item.id}` }}
     .tile__content
 </template>
 
 <script>
-import draggable from 'vuedraggable';
 import { setTileResizeListener, removeTileResizeListener } from 'vendors/resizeDetector';
 
 export default {
-  computed: {
-    list: {
-      get() {
-        return this.$store.state.desktop.list;
-      },
-      set(value) {
-        this.$store.commit('desktop/updateList', value);
-      },
-    },
-  },
-  components: {
-    draggable,
-  },
   methods: {
-    deleteTileAction() {
+    deleteTile() {
       this.$store.commit('desktop/removeListItem', this.item);
     },
   },

@@ -1,0 +1,53 @@
+@import 'sass/_configs.scss';
+
+.transaction-desk {
+  padding: 30px 0 50px;
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    margin: 0 30px;
+    background-color: rgba($black-light, .05);
+    padding: 8px 30px;
+    min-width: 150px;
+    opacity: .7;
+    color: $black-light;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--green {
+      color: #155724;
+      background-color: #d4edda;
+    }
+
+    &--red {
+      color: #721c24;
+      background-color: #f8d7da;
+    }
+
+    &--yellow {
+      color: #856404;
+      background-color: #fff3cd;
+    }
+  }
+
+  &__total {
+    text-align: center;
+    font-size: 18px;
+    color: $black-light;
+    margin-bottom: 15px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import CreatePersistedState from 'vuex-persistedstate';
 
 import desktop from './modules/desktop';
+import websocket from './modules/websocket';
 
 Vue.use(Vuex);
 
@@ -17,6 +18,7 @@ const vuexPersisted = new CreatePersistedState({
 export default new Vuex.Store({
   modules: {
     desktop,
+    websocket,
   },
   plugins: [vuexPersisted],
 });

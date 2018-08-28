@@ -1,14 +1,14 @@
 <template lang="pug">
-  BitcoinDesk
+  TransactionDesk
 </template>
 
 <script>
-import BitcoinDesk from 'components/BitcoinDesk/BitcoinDesk';
+import TransactionDesk from 'components/TransactionDesk/TransactionDesk';
 
 export default {
   name: 'Websocket',
   components: {
-    BitcoinDesk,
+    TransactionDesk,
   },
 };
 </script>
