@@ -1,7 +1,6 @@
 <template lang="pug">
   .intro
-    h1.intro__text
-      | Hi,
+    h1.intro__text Hi,
       br
       | This App contains two parts:
       br
@@ -15,5 +14,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './Intro.scss';
+  @import './Intro.scss';
 </style>
