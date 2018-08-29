@@ -9,29 +9,33 @@
 <script>
 import Draggable from 'vuedraggable';
 import Tile from 'components/Tile/Tile';
+import { mapMutations } from 'vuex';
 
 export default {
+  data() {
+    return {
+      listOptions: {
+        animation: 230,
+        handle: '.tile__header',
+        ghostClass: 'tiles-list__item--ghost',
+      },
+    };
+  },
   computed: {
     list: {
       get() {
         return this.$store.state.desktop.list;
       },
       set(value) {
-        this.$store.commit('desktop/updateList', value);
+        this.updateList(value);
       },
-    },
-    listOptions() {
-      return {
-        animation: 230,
-        handle: '.tile__header',
-        ghostClass: 'tiles-list__item--ghost',
-      };
     },
   },
   methods: {
-    addTile() {
-      this.$store.commit('desktop/addListItem');
-    },
+    ...mapMutations('desktop', {
+      addTile: 'addListItem',
+      updateList: 'updateList',
+    }),
   },
   components: {
     Draggable,
